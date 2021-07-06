@@ -3,14 +3,14 @@
 
 [TOC]
 
-##Introduction
+## Introduction
 This program is aiming at four different topics:
 - a method to simulate the **fabric behavior** and the **body-clothing interaction**, especially handling **complex textured curving fabrics** which been created by **fabric modification** and also handling the friction and the deformations of the soft tissues causing by the garments
 - an adjustable realistic 3d human figure module reconstructs from **MRI (magnetic resonance imaging)** scans with a physical-simulation based full-body musculoskeletal system that can reproduce **realistic joint-muscle motions** and can be adjusted to fit the body shapes of a wide arrange of individuals by using **medical models of skeletal development**
 - a dynamic 3d pattern making system that provides the feasibility of **real-time** adjustment of the clothing pattern and the 3d garments
 - a method to handle **size converting** of the garments **from individual to individual** based on the adjustable 3d human figure using **displacement field** and **kernel function**
 
-##How to Use
+## How to Use
 The program is based on **Cinema 4D**, which contains two separate parts of scripts and a prebuilt adjustable 3d human figure with bones and muscles.
 
 The first part of the scripts are based on **c4dpy** (**Python 2.7**), which function inside Cinema 4D (**R19**), can be directly loaded into Cinema 4d through **Script Manager**.
@@ -37,13 +37,13 @@ The communications between original c4dpy and physics engine scripts are via **l
 The computing data of the physical simulations will be transported via a **JSON data **file. When using cloud computing, placing the data file into **NAS (Network-Attached Storage)** for the data transportations is recommended.
 You can also modify the scripts to transport computing data via socket as well
 
-##Dynamic System
-###Dynamic Object
+## Dynamic System
+### Dynamic Object
 A polygon object could be labeled into a dynamic object by **Dynamic Object script** with a **Python Tag** that contains all the parameters needed in physical simulation, functions independently and differently from the build-in Dynamic Tag of Cinema 4D.
 A base object should be first turned into a polygon object using the **Make Editable** button before being labeled into a dynamic object.
 All the polygons must be **quadrilaterals** for the moment.
 
-####Types of the Dynamic Object
+#### Types of the Dynamic Object
 Similar to the build-in dynamic system, the types of the dynamic object are as follows :
 - **Collider Body**
 A steady object that is **undeformable** during the dynamic simulations and collisions, affecting other objects to deform, and **only can be directly moved or deformed by the user**, is used for simulating the objects such as ground, walls, and **the bones in this program**, whose deformations are minimal compared to other objects in the scenario of simulation.
@@ -58,36 +58,37 @@ A deformable **plane object** can be affected by gravity and other objects, and 
 
 
 
-###Dynamic Environment
+### Dynamic Environment
 
-###Dynamic Connector
+### Dynamic Connector
 
-##Cloth & Pattern System
+## Cloth & Pattern System
 
-##3D Human Figure
-###Posing 
+## 3D Human Figure
+### Posing 
 >Update needed
 
-###Adjustment of Body Shape
+### Adjustment of Body Shape
 >Update needed
 
-###Size Converting Method
+### Size Converting Method
 
-###Build your own Adjustable Figure
+### Build your own Adjustable Figure
 
-##Algorithm of Dynamic System
-###3D Co-Rotation FEM
+## Algorithm of Dynamic System
+### 3D Co-Rotation FEM
 
-###Collison & Friction
+### Collison & Friction
 
-###Pattern Adjusting
+### Pattern Adjusting
 
 ### Size Converting
 
-##Other Usages of Dynamic System
+## Other Usages of Dynamic System
 
-##Benchmark & Comparision
+## Benchmark & Comparision
 
-##Extra Tools for C4Dpy
+## Extra Tools for C4Dpy
 
-##Future Development
+## Future Development
+
